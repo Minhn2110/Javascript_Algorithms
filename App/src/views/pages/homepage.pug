@@ -1,0 +1,23 @@
+extends ../layouts/master.pug
+
+block title
+  title My Page - home
+
+block basicSeo
+  meta(name='description' content='home page')
+  meta(name='keywords', content='home, page')
+  meta(name='author' content='')
+
+block content
+  include ../components/banner-slideshow/banner-slideshow.pug
+  .container
+    // Button trigger modal
+    button.btn.btn-primary(type='button' data-toggle='modal' data-target='#exampleModal')
+      | Launch demo modal
+    // Modal
+    include ../components/modal/modal.pug
+    // Navtab
+    include ../components/nav-tab/nav-tab.pug
+    // Accordion
+    include ../components/accordion/accordion.pug
+
