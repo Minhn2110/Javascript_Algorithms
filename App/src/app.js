@@ -5,6 +5,8 @@ import SlideShow from './views/components/banner-slideshow/banner-slideshow';
 import NavTab from './views/components/nav-tab/nav-tab';
 import Bootstrap from './views/bootstrap/src/index';
 
+import Checkbox from './views/components/checkbox/checkbox';
+
 require('slick-carousel/slick/slick.js');
 require('slick-carousel/slick/slick.scss');
 require('slick-carousel/slick/slick-theme.scss');
@@ -19,6 +21,7 @@ $(document).ready(() => {
   Global.lazyLoad();
   Header.init();
   Language.init();
+  Checkbox.init();
 });
 
 $(window).on('resize', () => {

@@ -5,7 +5,7 @@ block title
 
 block content
   - var pages = { homepage: '/home-page.html', typography: '/typography.html'}
-  - var pages2 = {componentshowcase: '/homepage.html'}
+  - var pages2 = {componentshowcase: '/homepage.html', checkbox: '/checkbox.html'}
 
   //- Desktop page
   section.page.home__page
@@ -17,7 +17,7 @@ block content
           li
             a(href=val)= index
 
-      h1.page__title # Card
+      h1.page__title # Cases
       ul(style="list-style: disc; padding-left: 4rem; margin: 4rem 0")
         each val, index in pages2
           li
